@@ -1,0 +1,37 @@
+@use "../variables/colors";
+@use "../components/buttons";
+@use "../mixins/mobile";
+@use "../mixins/text";
+
+.container {
+  width: 1170px;
+  margin: 0 auto;
+  // border: 1px solid blue;
+  background-color: $secondary-color;
+}
+
+@include mobile() {
+  .container {
+    width: 100%;
+    min-width: 330px;
+    max-width: 375px;
+    padding: 0 23px;
+  }
+}
+
+.header-container {
+  max-width: 1370px;
+  margin: 0 auto;
+  color: $text-white;
+  background-color: $primary-color;
+  // border: 1px solid blue;
+}
+
+@include mobile() {
+  .header-container {
+    width: 100%;
+    min-width: 330px;
+    max-width: 390px;
+    padding: 0 23px;
+  }
+}

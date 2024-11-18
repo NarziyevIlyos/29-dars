@@ -1,0 +1,87 @@
+@use "../variables/colors";
+@use "../components/buttons";
+@use "../mixins/mobile";
+@use "../mixins/text";
+
+.hero {
+  padding: 114px 0px 56px;
+}
+.header-container {
+}
+.hero__wrapper {
+  display: flex;
+  // gap: 87px;
+  justify-content: space-between;
+  align-items: center;
+}
+.hero__info {
+  position: relative;
+  z-index: 3;
+}
+.hero__info-sub-title {
+  color: $btn-bg-orangish;
+}
+.hero__info-title {
+  margin-top: 24px;
+}
+.hero__info-title__br {
+}
+.hero__info-desc {
+  margin-top: 24px;
+  color: $text-light-gray;
+}
+.hero__info-desc__br {
+}
+.hero__info-btns {
+  margin-top: 34px;
+  display: flex;
+  align-items: center;
+  gap: 34px;
+  
+}
+.hero__info-btn {
+}
+
+.hero__info-link {
+}
+
+.hero__info-link-text {
+  //styleName: Text;
+  font-family: Epilogue;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 32px;
+  text-align: left;
+}
+.hero__info-comment {
+  margin-top: 108px;
+  display: flex;
+  gap: 16px;
+  color: $text-darkish;
+}
+.hero__info-comment__img {
+}
+.hero__info-comment__desc {
+}
+.hero__info-comment__desc-quote {
+  color: $text-light-gray;
+}
+.hero__info-comment__desc-info {
+  color: $text-white;
+}
+.hero__img {
+}
+
+// positioned
+.hero__star {
+  position: absolute;
+  top: 32px;
+  left: 278px;
+  z-index: 0;
+}
+
+.hero__star img {
+  display: block;
+  z-index: inherit;
+}
+// positioned

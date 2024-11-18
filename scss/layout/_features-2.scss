@@ -1,0 +1,118 @@
+@use "../variables/colors";
+@use "../components/buttons";
+@use "../mixins/mobile";
+@use "../mixins/text";
+
+.features-2 {
+  padding: 133px 0px 106px 0px;
+  background-color: $secondary-color;
+}
+.container {
+}
+.features-2__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.features-2__info {
+  width: 370px;
+  padding-top: 76px;
+
+  .features-2__sub-title {
+  }
+  .sub-title {
+  }
+  .features-2__desc {
+    margin-top: 30px;
+    font-family: Epilogue;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 32px;
+  }
+  .features-2__link {
+    margin-top: 28px;
+  }
+  .features-2__link-text {
+    //styleName: Text;
+    font-family: Epilogue;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 32px;
+    color: $text-darkish;
+  }
+}
+
+.features__right-cards {
+  width: 672px;
+  position: relative;
+  // border: 2px solid blue;
+  // display: flex;
+  // display: inline-block;
+  .card {
+    position: absolute;
+    bottom: 0px;
+    width: 336px;
+    padding: 105px 48px 46px 48px;
+    border: 1px solid #f3d1bf;
+    background-color: $secondary-color;
+    float: left;
+     // border: 2px solid red;
+    // transition: all 2s ease-in-out;
+
+    &:hover {
+      background-color: $text-white;
+      padding: 48px 48px 46px 48px;
+      // transition: all 1s ease-in-out;
+
+      & .card__header {
+        display: inline-block;
+        // transition: all 2s ease-in-out;
+      }
+
+      & .card__header-img {
+        // transition: all 2s ease-in-out;
+      }
+    }
+  }
+  .card__header {
+    // border: 2px solid red;
+    display: inline-block;
+    display: none;
+    padding-bottom: 41px;
+    // opacity: 0;
+  }
+  .card__header-img {
+    // border: 2px solid blue;
+    position: relative;
+    display: inline-block;
+  }
+  .positioned__img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+  }
+  .card__body {
+  }
+  .card__body-top {
+  }
+  .card__body-top-title {
+  }
+  .card__body-bottom {
+  }
+  .card__body-bottom-desc {
+    margin-top: 19px;
+    //styleName: Text;
+    font-family: Epilogue;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 32px;
+    color: #391400a3;
+  }
+
+  .card-1 {
+    left: 0px;
+  }
+  .card-2 {
+    right: 0px;
+  }
+}

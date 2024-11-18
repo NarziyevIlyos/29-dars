@@ -1,0 +1,38 @@
+@use "../variables/colors";
+@use "../components/buttons";
+@use "../mixins/mobile";
+@use "../mixins/text";
+
+
+.video-reel {
+    padding: 127px 0px 95px;
+    background-color: $secondary-color;
+}
+.video-reel__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 130px;
+}
+.video-reel__img {
+    position: relative;
+
+    & .video-reel__positioned-img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+    }
+}
+.video-reel__info {
+    padding-top: 60px;
+    max-width: 470px;
+}
+.video-reel__info-title {
+    margin-top: 17px;
+}
+.video-reel__info-title__br {
+}
+.video-reel__info-desc {
+    margin-top: 28px;
+}

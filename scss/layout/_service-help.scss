@@ -1,0 +1,63 @@
+@use "../variables/colors";
+@use "../components/buttons";
+@use "../mixins/mobile";
+@use "../mixins/text";
+
+.service-help {
+  padding: 70px 0px 64px 0px;
+  background-color: $secondary-color;
+}
+.container {
+}
+.service-help__wrapper {
+}
+.service-help__sub-title {
+}
+.sub-title {
+    margin-top: 17px;
+}
+.service-help__title {
+    color: $primary-color;
+}
+.service-help__cards {
+    margin-top: 35px;
+  display: flex;
+
+  .card {
+    padding: 48px 48px 52px 48px;
+    border-radius: 6px;
+    border: 1px solid #f3d1bf;
+  }
+  .card__header {
+    // background-color: $primary-color;
+  }
+  .card__header-img {
+    display: inline-block;
+    position: relative;
+  }
+  .positioned__img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+  }
+  .card__body {
+  }
+  .card__body-title {
+    margin-top: 41px;
+  }
+  .card__body-desc {
+    margin-top: 19px;
+  }
+  .card__body-link {
+    margin-top: 26px;
+  }
+  .card__body-link-text {
+    //styleName: Text;
+    font-family: Epilogue;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 32px;
+    color: $text-dark;
+  }
+}

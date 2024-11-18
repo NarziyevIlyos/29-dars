@@ -1,0 +1,67 @@
+@use "../variables/colors";
+@use "../components/buttons";
+@use "../mixins/mobile";
+@use "../mixins/text";
+
+.how-we-work {
+  padding: 70px 0px 0px;
+  background-color: $secondary-color;
+
+  .container {
+    border-bottom: 1px solid #f3d1bf;
+  }
+}
+
+.how-we-work__wrapper {
+  display: flex;
+  justify-content: space-between;
+
+  padding-bottom: 135px;
+}
+.how-we-work__info-left {
+  width: 470px;
+}
+.how-we-work__sub-title {
+  text-transform: uppercase;
+}
+.how-we-work__title {
+  margin-top: 17px;
+}
+.how-we-work__desc {
+  margin-top: 31px;
+}
+.how-we-work__info-right {
+  width: 470px;
+}
+
+.how-we-work__info-links {
+}
+.how-we-work__link {
+  margin-top: 28px;
+}
+.how-we-work__info-link {
+  margin-top: 80px;
+  display: flex;
+  align-items: center;
+  gap: 54px;
+}
+
+.how-we-work__info-link-1 {
+  margin-top: 0px;
+}
+
+.how-we-work__info-link-number {
+  font-family: Epilogue;
+  font-size: 72px;
+  font-weight: 800;
+  letter-spacing: -2px;
+}
+
+.how-we-work__info-link-text {
+  font-family: Epilogue;
+  font-size: 24px;
+  font-weight: 700;
+  text-align: left;
+  color: $text-dark;
+  display: block;
+}

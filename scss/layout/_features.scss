@@ -1,0 +1,58 @@
+@use "../variables/colors";
+@use "../components/buttons";
+@use "../mixins/mobile";
+@use "../mixins/text";
+
+.features {
+    padding: 95px 0px 133px 0px;
+    background-color: $secondary-color;
+}
+.container {
+}
+.features__wrapper {
+    display: flex;
+    gap: 171px;
+}
+.features__info-left {
+    padding-top: 53px;
+    max-width: 470px;
+}
+.features__sub-title {
+}
+.sub-title {
+    
+}
+.features__title {
+    margin-top: 20px;
+}
+.features__title__br {
+}
+.features__desc {
+    margin-top: 26px;
+}
+.features__info-links {
+    margin-top: 26px;
+    padding-left: 48px;
+}
+.features__info-link {
+    margin-top: 20px;
+    position: relative;
+}
+.features__link-1, 
+.features__link-2, 
+.features__link-3 {
+    &::before {
+        content: url("../../assets/icon/check.svg");
+        position: absolute;
+        left: -48px;
+        top: -3px;
+    }
+}
+// .features__info-link-text {
+// }
+// .features__link-2 {
+// }
+// .features__link-3 {
+// }
+// .features__right-img {
+// }

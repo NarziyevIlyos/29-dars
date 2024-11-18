@@ -1,0 +1,20 @@
+
+
+.partners {
+    padding: 72px 0px 0px 0px;
+    background-color: $secondary-color;
+}
+.container {
+}
+.partners__wrapper {
+    padding-bottom: 72px;
+    
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(5, 1fr);
+    column-gap: 146px;
+
+    border-bottom: 1px solid #F3D1BF;
+}
+.partners__img {
+}
